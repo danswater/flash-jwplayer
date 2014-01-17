@@ -17,11 +17,13 @@ define( function( require ) {
 
 	jwplayer("myElement").setup( {
 
+		//'primary'		: 'flash',
+
 		'flashplayer'	: '/swf/jwplayer.flash.swf',
 		
 		'file' 			: '/assets/bigbuck.mp4',
 		
-		'image' 		: '',
+		'image' 		: '/assets/image.jpg',
 		
 		'controls'		: false
 	
@@ -36,8 +38,6 @@ define( function( require ) {
 
 		fileInfo.appendChild( spanTotalLength );
 		spanTotalLength.innerHTML = utils.toTimer( 0 );
-
-		console.log( length );
 
 	} );
 
@@ -69,14 +69,11 @@ define( function( require ) {
 		fileInfo.appendChild( spanTotalLength );
 		spanTotalLength.innerHTML = utils.toTimer( jwplayer( 'myElement').getDuration() );
 
-		console.log( obj );
-
 	} );
 
 	jwplayer( 'myElement' ).onBufferChange( function( buffer ) { 
 				
 		//Todo calculate buffer rate and display it
-		console.log( buffer.bufferPercent );
 
 	} );
 
@@ -86,7 +83,9 @@ define( function( require ) {
 		spanInitialLength.innerHTML = utils.toTimer( 0 );
 
 		fileInfo.appendChild( spanTotalLength );
-		spanTotalLength.innerHTML = utils.toTimer( 0 );		
+		spanTotalLength.innerHTML = utils.toTimer( 0 );
+
+		playPause.innerHTML = 'Play';		
 
 	} );
 
@@ -145,8 +144,21 @@ define( function( require ) {
 	fullscreen.addEventListener( 'click', function() { 
 
 		//Todo make player fullscreen
-		console.log( 'fullscreen is emitted' );
 
-	} );	
+		// jwplayer( 'myElement' ).setFullscreen( true );
+		// console.log( jwplayer( 'myElement' ).getFullscreen() );
+		var elem = document.getElementById("myElement_wrapper");
+		if (elem.requestFullscreen) {
+		  elem.requestFullscreen();
+		} else if (elem.msRequestFullscreen) {
+		  elem.msRequestFullscreen();
+		} else if (elem.mozRequestFullScreen) {
+		  elem.mozRequestFullScreen();
+		} else if (elem.webkitRequestFullscreen) {
+		  elem.webkitRequestFullscreen();
+		}
+
+	} );
+
 
 } );

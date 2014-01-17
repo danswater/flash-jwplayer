@@ -10,6 +10,8 @@ require.config( {
 
 		'jwplayer'	: 'jwplayer',
 
+		'jwplayerum': 'jwplayer-um',
+
 		'events'	: 'events'
 	
 	}

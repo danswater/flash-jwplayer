@@ -1,0 +1,39 @@
+{
+  "name": "flash-jwplayer",
+  "version": "0.0.1",
+  "description": "API test for jwplayer across multiple browser",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "express" : "*"
+  },
+  "devDependencies" : {
+    "grunt" : "~0.4.1",
+    "grunt-contrib-connect" : "0.3.0",
+    "grunt-contrib-livereload" : "0.1.2",
+    "grunt-bower-requirejs" : "~0.4.1",
+    "grunt-open" : "~0.2.0",
+    "grunt-express-server" : "~0.4.1",
+    "matchdep" : "~0.2.0",
+    "time-grunt" : "~0.1.1",
+    "grunt-contrib-watch" : "~0.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danswater/flash-jwplayer.git"
+  },
+  "keywords": [
+    "flash",
+    "js",
+    "html5",
+    "videos"
+  ],
+  "author": "danswater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danswater/flash-jwplayer/issues"
+  },
+  "homepage": "https://github.com/danswater/flash-jwplayer"
+}
