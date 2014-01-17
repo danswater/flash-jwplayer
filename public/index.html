@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Player</title>
+		<script type="text/javascript" src="/scripts/jwplayer.js"></script>
+		<style>
+			#progess.li {
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="myElement">Loading the player...</div>
+		<div id="progress"></div>
+		<div id="length"></div>
+		<div id="fileInfo"></div>
+
+		<button id="playPause" >Play</button>
+		<button id="min" > Min. Volume </button>
+		<button id="max" > Max. Volume </button>
+		<button id="fullscreen"> Fullscreen </button>
+
+		<!-- build:js scripts/main.js -->
+		<script data-main="scripts/init" src="bower_components/requirejs/require.js"></script>
+		<!-- endbuild -->		
+
+	</body>
+</html>

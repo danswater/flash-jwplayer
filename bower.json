@@ -1,0 +1,27 @@
+{
+  "name": "jwplayer",
+  "version": "0.0.0",
+  "authors": [
+    "danswater <dansisabot@gmail.com>"
+  ],
+  "description": "Flash Based Video Player",
+  "main": "public/index.html",
+  "keywords": [
+    "flash"
+  ],
+  "dependencies" : {
+    "requirejs" : "~2.1.5"
+  },
+  "devDependencies" : {
+
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
