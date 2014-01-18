@@ -1,19 +1,19 @@
 'use strict';
 
-require.config( { 
+require.config( {
 
-	baseUrl : '/scripts',
+	'baseUrl' : '/scripts',
 
-	deps  : [ 'main' ],
+	'deps' : [ 'main' ],
 
-	paths : {
+	'paths' : {
 
-		'jwplayer'	: 'jwplayer',
+		'jwplayer' : 'jwplayer',
 
-		'jwplayerum': 'jwplayer-um',
+		'jwplayerum' : 'jwplayer-um',
 
-		'events'	: 'events'
-	
+		'events' : 'events'
+
 	}
 
 } );

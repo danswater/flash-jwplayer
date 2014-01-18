@@ -2,17 +2,17 @@
 
 var lrSnippet = require( 'grunt-contrib-livereload/lib/utils' ).livereloadSnippet;
 var mountFolder = function( connect, dir ) {
-	return connect.static( require( 'path').resolve( dir ) );
+	return connect.static( require( 'path' ).resolve( dir ) );
 };
 
 module.exports = function( grunt ) {
 
-	require( 'matchdep').filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
+	require( 'matchdep' ).filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
 	require( 'time-grunt' )( grunt );
 
 	grunt.initConfig( {
 
-		watch: {
+		watch : {
 
 			livereload : {
 
@@ -76,9 +76,9 @@ module.exports = function( grunt ) {
 
 	} );
 
-	grunt.registerTask( 'default', function( target ) { 
+	grunt.registerTask( 'default', function( target ) {
 
-		if( target === 'dist' ) {
+		if ( target === 'dist' ) {
 
 			return grunt.task.run( [ 'build', 'open', 'connect:dist:keepalive' ] );
 
