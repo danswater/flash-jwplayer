@@ -87,7 +87,7 @@ define( function( require ) {
 
 	} );
 
-	playPause.addEventListener( 'click', function() {
+	utils.listen( playPause, 'click', function() {
 
 		var obj = document.getElementById( 'playPause' );
 
@@ -111,7 +111,7 @@ define( function( require ) {
 
 	} );
 
-	min.addEventListener( 'click', function() {
+	utils.listen( min, 'click', function() {
 
 		var volume = jwplayer( 'myElement' ).getVolume();
 
@@ -125,7 +125,7 @@ define( function( require ) {
 
 	} );
 
-	max.addEventListener( 'click', function() {
+	utils.listen( max, 'click', function() {
 
 		var volume = jwplayer( 'myElement' ).getVolume();
 
@@ -139,7 +139,7 @@ define( function( require ) {
 
 	} );
 
-	fullscreen.addEventListener( 'click', function() {
+	utils.listen( fullscreen, 'click', function() {
 
 		var elem = document.getElementById( "myElement" );
 

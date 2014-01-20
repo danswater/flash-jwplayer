@@ -28,6 +28,21 @@ define( function( require ) {
 
 	};
 
+	Utils.prototype.listen = function( DOM, event, callback ) {
+
+			if( !DOM.addEventListener ) {
+
+				DOM.attachEvent( event, callback );
+
+			}
+			else {
+
+				DOM.addEventListener( event, callback );
+
+			}
+
+	};
+
 	return Utils;
 
 } );
