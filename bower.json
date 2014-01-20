@@ -1,12 +1,12 @@
 {
   "name": "flash-jwplayer",
-  "version": "0.0.1",
-  "authors": [
+  "version" : "0.0.1",
+  "authors" : [
     "danswater <dansisabot@gmail.com>"
   ],
-  "description": "Flash Based Video Player",
+  "description" : "Flash Based Video Player",
   "main": "public/index.html",
-  "keywords": [
+  "keywords" : [
     "flash"
   ],
   "dependencies" : {
