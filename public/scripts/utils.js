@@ -32,6 +32,7 @@ define( function( require ) {
 
 			if( !DOM.addEventListener ) {
 
+				event = 'on' + event;
 				DOM.attachEvent( event, callback );
 
 			}
